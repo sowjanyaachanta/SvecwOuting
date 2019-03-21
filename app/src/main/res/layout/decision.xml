@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fotojet">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/id1"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/darkGreen"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/id1"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/darkGreen"
+        android:textSize="15dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stcall"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/view"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/ic_call"
+        android:text="student "/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptcall"
+        android:drawableRight="@drawable/ic_call"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/stcall"
+        android:textColor="@color/black"
+        android:text="Parent "/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/approve"
+        android:layout_marginTop="10dp"
+        android:text="Approve"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/tick"
+        android:textColor="@color/black"
+        android:layout_below="@+id/ptcall" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/reject"
+        android:text="Reject"
+        android:drawableRight="@drawable/cross"
+        android:background="#d8907f"
+        android:textColor="@color/black"
+        android:layout_below="@+id/approve"
+        />
+</RelativeLayout>

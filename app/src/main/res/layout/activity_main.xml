@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+  android:background="@drawable/fotojet"
+    tools:context=".Login"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="LOGIN"
+        android:paddingTop="40dp"
+        android:textColor="@color/darkGreen"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:textSize="35dp"
+        />
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registernum"
+        android:hint="Register Number"
+        android:drawableLeft="@drawable/reg_name"
+        android:layout_margin="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="password(atleast 6 characters)"
+        android:drawableLeft="@drawable/password"
+        android:layout_margin="15dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                     login                     "
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:id="@+id/login"
+        android:clickable="true"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User? Sign Up"
+        android:id="@+id/signup"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:textColor="@color/lightBlack"
+        android:nestedScrollingEnabled="false" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+
+    defaultConfig {
+        applicationId "svecw.svecwouting"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id               : "dd0093c9-809c-4ecf-a4d9-e9dd42ea3c66",
+                                onesignal_google_project_number: "REMOTE"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+ //   compile files('libs/graphview-3.1.jar')
+    //compile 'com.jjoe64:graphview:4.0.0'
+    compile 'com.jjoe64:graphview:4.2.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // compile 'com.google.android.c2dm.intent.RECEIVE'
+    //   classpath "gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.1"
+    // Required for OneSignal, even if you have added FCM.
+    //  compile 'com.google.android.gms:play-services-gcm:+'
+    // Required for geotagging
+    //  compile "com.google.android.gms:play-services-location:+"
+    // compile 'com.onesignal:OneSignal:3.+@aar'
+    compile 'com.onesignal:OneSignal:3.5.3'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.google.firebase:firebase-database:11.0.4'
+    compile 'com.google.firebase:firebase-storage:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.android.gms:play-services-places:11.0.4'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.android.gms:play-services-basement:11.0.4'
+}
+apply plugin: 'com.google.gms.google-services'
+//apply plugin: "com.onesignal.androidsdk.onesignal-gradle-plugin"

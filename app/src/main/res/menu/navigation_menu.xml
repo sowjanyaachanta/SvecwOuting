@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_profile"
+        android:title="My Profile"/>
+    <item android:id="@+id/nav_status"
+        android:title="Outing Status"/>
+    <item android:id="@+id/nav_history"
+        android:title="Outing History"/>
+    <item android:id="@+id/nav_contact"
+        android:title="Contact"/>
+    <item android:id="@+id/nav_logout"
+        android:title="LogOut"/>
+</menu>

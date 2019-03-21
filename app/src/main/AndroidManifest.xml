@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="svecw.svecwouting" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.prmission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/label"
+        android:label="SvecwOuting"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <activity android:name=".LoginAll" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainFencing"
+            android:parentActivityName=".StudentLaunch">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="49" />
+        </activity>
+        <service android:name=".GeofenceTransitionService"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBlGOHDkm11JYvk1tM0CfDK3nKGA1QyKso" />
+        <activity android:name=".StudentLaunch" />
+        <activity
+            android:name=".StudentHistory"
+            android:parentActivityName=".StudentLaunch" />
+        <activity
+            android:name=".ReturnUpdate"
+            android:parentActivityName=".MainFencing" />
+        <activity
+            android:name=".StudentProfile"
+            android:parentActivityName=".StudentLaunch" />
+        <activity android:name=".ApproverLaunch" />
+        <activity
+            android:name=".ContactInfo"
+            android:parentActivityName=".ApproverLaunch" />
+        <activity
+            android:name=".AppChoose"
+            android:parentActivityName=".ApproverLaunch" />
+        <activity
+            android:name=".ApproverProfile"
+            android:parentActivityName=".ApproverProfile" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".LoginAll" />
+        <activity
+            android:name=".StuApply"
+            android:parentActivityName=".StudentLaunch" />
+        <activity
+            android:name=".ApplyMessage"
+            android:parentActivityName=".StudentLaunch" />
+        <activity
+            android:name=".AppRequestList"
+            android:parentActivityName=".AppChoose" />
+        <activity
+            android:name=".AppStuDetails"
+            android:parentActivityName=".AppRequestList" />
+        <activity
+            android:name=".WardenRequestList"
+            android:parentActivityName=".WardenChoose" />
+        <activity
+            android:name=".WardenStuDetails"
+            android:parentActivityName=".WardenRequestList" />
+        <activity
+            android:name=".WardenChoose"
+            android:parentActivityName=".ApproverLaunch" />
+        <activity
+            android:name=".WardenPendingList"
+            android:parentActivityName=".WardenChoose" />
+        <activity
+            android:name=".Pop"
+            android:parentActivityName=".AppStuDetails"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".StudentStatus"
+            android:parentActivityName=".StudentLaunch" />
+        <activity android:name=".StudentSearch" />
+        <activity android:name=".GraphReports"
+            android:parentActivityName=".StudentSearch"/>
+    </application>
+
+</manifest>

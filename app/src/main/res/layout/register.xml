@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fotojet">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="SIGN UP"
+        android:textColor="@color/darkGreen"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registernum2"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/reg_name"
+        android:hint="Register Number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password2"
+        android:hint="Password(altleast 6 characters)"
+        android:drawableLeft="@drawable/password"
+        android:layout_margin="15dp"
+        android:inputType="textPassword"
+        />
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+        <RadioButton
+            android:id="@+id/parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student/Faculty"
+            />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:id="@+id/otp"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/otp_btn"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

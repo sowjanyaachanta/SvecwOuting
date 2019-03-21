@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:background="@drawable/fotojet"
+    android:layout_gravity="center"
+    >
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="        Requests        "
+        android:background="@drawable/rounded_button"
+        android:id="@+id/requests"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        />
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="         Pending        "
+        android:background="@drawable/rounded_button"
+        android:id="@+id/pending"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="        Approved       "
+        android:background="@drawable/rounded_button"
+        android:id="@+id/approved"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="          Rejected          "
+        android:background="@drawable/rounded_button"
+        android:id="@+id/rejected"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+</LinearLayout>

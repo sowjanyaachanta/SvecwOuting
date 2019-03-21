@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "675808609577",
+    "firebase_url": "https://svecwouting.firebaseio.com",
+    "project_id": "svecwouting",
+    "storage_bucket": "svecwouting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675808609577:android:cac667365e1a601a",
+        "android_client_info": {
+          "package_name": "svecw.svecwouting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675808609577-vnukur0ch43lvoflvmrdgjukd2dfqqag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "svecw.svecwouting",
+            "certificate_hash": "3d1b63153b2a9e55e807590359cac96c868a509c"
+          }
+        },
+        {
+          "client_id": "675808609577-r2vd45o59f3l87eivs30hcibc80k2jgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT2mG5rfMoz9z6ZkdIOoqttQp_EirFA_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675808609577-r2vd45o59f3l87eivs30hcibc80k2jgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

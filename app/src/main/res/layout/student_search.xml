@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/studentsearch">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dt1"
+        android:hint="Select from date "
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/calen"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dt2"
+        android:hint="Select to date "
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/calen"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        android:hint="Enter key"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="Search"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_item"
+        android:clickable="true"
+        android:background="@drawable/fotojet">
+    </ListView>
+
+
+</LinearLayout>

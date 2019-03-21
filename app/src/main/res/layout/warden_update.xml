@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fotojet">
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg"
+        android:hint="Register Number "
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/sr"
+        android:drawableLeft="@drawable/search"
+        android:background="@color/grey"
+        android:layout_toRightOf="@+id/reg"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reg"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:textColor="@color/darkGreen"
+        android:textSize="20dp"
+        android:layout_below="@+id/imageView" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/update"
+        android:layout_below="@+id/view"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+</RelativeLayout>
